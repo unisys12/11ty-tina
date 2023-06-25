@@ -11,5 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "@tinacms/cli": "^1.5.20",
+    "tinacms": "^1.5.11"
   }
 }
