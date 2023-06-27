@@ -29,6 +29,7 @@ export default defineConfig({
             type: "string",
             name: "icon",
             label: "Icon",
+            isBody: false,
             required: true
           },
           {
@@ -46,6 +47,37 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "canine",
+        label: "Canines",
+        path: "src/canines",
+        defaultItem: () => {
+          return {
+            tags: 'canines'
+          }
+        },
+        fields: [
+          {
+            type: "string",
+            name: "tags",
+            label: "Tags",
+            required: true
+          },
+          {
+            type: "string",
+            name: "name",
+            label: "Name",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "layout",
+            label: "Layout",
+            required: true
+          }
+        ]
+      }
     ],
   },
 });

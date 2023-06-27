@@ -1,0 +1,10 @@
+---
+layout: layouts/main.njk
+---
+
+<h1 class="text-3xl font-bold text-teal-800">Canine Index Page</h1>
+
+<span>The dogs names are </span> 
+{% for canine in collections.canines %}
+    <span>{{ canine.data.name }}</span>
+{% endfor %}
